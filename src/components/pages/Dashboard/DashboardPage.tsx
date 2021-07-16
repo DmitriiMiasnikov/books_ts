@@ -1,4 +1,4 @@
-import DefaultTemplate from "components/shared/templates/DefaultTemplate";
+import DefaultTemplate from "./../../../components/shared/templates/DefaultTemplate";
 
 const DashboardPage = () => {
   return <DefaultTemplate>DashboardPage</DefaultTemplate>;

@@ -1,9 +1,9 @@
 import { Route, Switch, Redirect } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
-import Dashboard from "components/pages/Dashboard";
+import Dashboard from "./components/pages/Dashboard";
 
-import theme from "public/theme";
+import theme from "./theme";
 
 function App() {
   return (
