@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { DefaultTheme } from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   }
 `
 
-export const customButtonStyles = `
+export const customButtonStyles = (theme: DefaultTheme) => `
   background-color: transparent; 
-`
+  color: ${theme.colors.black};
+  `

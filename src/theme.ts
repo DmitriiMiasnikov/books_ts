@@ -1,15 +1,18 @@
 import { DefaultTheme } from "styled-components";
 
-export enum colors {
-  white = '#000',
-  black = '#fff',
+export enum Colors {
+  white = '#fff',
+  black = '#000',
   whiteF0 = '#f0efeb',
   brownED = '#eddcd2',
-  blue99 = '#99c1de'
+  blue99 = '#99c1de',
+  blue = '#0077b6'
 }
 
+
+
 const theme: DefaultTheme = {
-  colors,
+  colors: Colors,
   headerHeight: '4rem',
 }
 

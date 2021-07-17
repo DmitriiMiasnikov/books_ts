@@ -1,20 +1,22 @@
-import styled, { css } from "styled-components";
+import styled, { css, DefaultTheme } from "styled-components";
 
 interface SBProps {
-  customStyles?: string;
+  customStyles?: (theme: DefaultTheme) => string;
 }
 
 export const StyledButton = styled.div<SBProps>(
-  ({ theme: { colors }, customStyles }) => css`
+  ({ theme: { colors }, theme, customStyles }) => css`
     color: ${colors.white};
-    background-color: ${colors.blue99};
+    background-color: ${colors.blue};
     border-radius: 0.7rem;
     padding: 0.5rem 0.8rem;
-    
+    transition: 0.1s opacity;
+
     &:hover {
       cursor: pointer;
+      opacity: 0.8;
     }
 
-    ${customStyles}
+    ${customStyles && customStyles(theme)}
   `
 );
