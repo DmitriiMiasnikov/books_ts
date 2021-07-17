@@ -9,6 +9,7 @@ export const StyledLink = styled(NavLink)<SLProps>(
   ({ theme: { colors }, theme, customStyles }) => css`
   color: ${colors.black};
   text-decoration: none;
+  white-space: nowrap;
   transition: .1s opacity;
 
   &:hover {

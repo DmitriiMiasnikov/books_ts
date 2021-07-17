@@ -10,6 +10,7 @@ export const StyledButton = styled.div<SBProps>(
     background-color: ${colors.blue};
     border-radius: 0.7rem;
     padding: 0.5rem 0.8rem;
+    white-space: nowrap;
     transition: 0.1s opacity;
 
     &:hover {
