@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css, DefaultTheme } from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
@@ -18,16 +18,13 @@ export const Header = styled.div(
   border-bottom: 1px solid ${colors.brownED};
 `)
 
-export const Logo = styled.div(
-  ({ theme: { colors } }) => css`
-    font-size: 2rem;
-    line-height: 1.75rem;
-    color: ${colors.blue99};
-    font-style: italic;
-    margin-left: 1.5rem;
-    height: fit-content;
-  `
-)
+export const customLogoStyles = ({ colors }: DefaultTheme) => `
+  color: ${colors.blue};
+  margin-left: 1.5rem;
+  font-style: italic;
+  font-size: 2rem;
+  line-height: 1.75rem;
+`
 
 export const MainContent = styled.div(
   ({ theme: { headerHeight } }) => css`

@@ -1,10 +1,11 @@
 import type { PropsWithChildren } from "react";
 
 import type Props from "types/testType";
+import Link from "../../atoms/Link";
 
 import UserControls from "../../molecules/UserControls";
 
-import { Wrapper, Header, Logo, MainContent } from "./styled";
+import { Wrapper, Header, customLogoStyles, MainContent } from "./styled";
 
 const DefaultTemplate = ({
   children,
@@ -13,7 +14,9 @@ const DefaultTemplate = ({
   return (
     <Wrapper data-testid={testId}>
       <Header>
-        <Logo>Books</Logo>
+        <Link link="/home" customStyles={customLogoStyles}>
+          Books
+        </Link>
         <UserControls />
       </Header>
       <MainContent>{children}</MainContent>

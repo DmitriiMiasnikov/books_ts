@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   }
 `
 
-export const customButtonStyles = (theme: DefaultTheme) => `
+export const customButtonStyles = ({ colors }: DefaultTheme) => `
   background-color: transparent; 
-  color: ${theme.colors.black};
+  color: ${colors.black};
   `
