@@ -9,6 +9,7 @@ declare module 'styled-components' {
       brownED: string,
       blue99: string,
       blue: string,
+      blueD6: string,
     },
     headerHeight: string
   }

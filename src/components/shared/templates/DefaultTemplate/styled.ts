@@ -20,9 +20,19 @@ export const Header = styled.div(
 
 export const customLogoStyles = ({ colors }: DefaultTheme) => `
   color: ${colors.blue};
-  margin-left: 1.5rem;
+  margin: 0 1.5rem;
   font-style: italic;
   font-size: 2rem;
+  line-height: 1.75rem;
+`
+
+export const customMenuLinkStyles = ({ colors }: DefaultTheme) => `
+  padding: 0.5rem 0.7rem;
+  background-color: ${colors.blueD6};
+  color: ${colors.blue};
+  border-radius: 1rem;
+  font-style: italic;
+  font-size: 1.25rem;
   line-height: 1.75rem;
 `
 

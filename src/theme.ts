@@ -6,7 +6,8 @@ export enum Colors {
   whiteF0 = '#f0efeb',
   brownED = '#eddcd2',
   blue99 = '#99c1de',
-  blue = '#0077b6'
+  blue = '#0077b6',
+  blueD6 = '#d6e2e9'
 }
 
 
