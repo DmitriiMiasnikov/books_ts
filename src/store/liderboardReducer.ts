@@ -11,7 +11,7 @@ const initialStates: InitalStates = {
 const liderboardReducer = (state = initialStates, action: any) => {
   switch (action.type) {
     case SET_LIDERBOARD: {
-      return { ...state };
+      return { ...state, liderboard: action.list };
     }
     default:
       break;
@@ -19,7 +19,7 @@ const liderboardReducer = (state = initialStates, action: any) => {
   return state;
 };
 
-export const setLiderboardList = (list: [{ name: string; rating: number }]) => {
+export const setLiderboardList = (list: { name: string; rating: number }[]) => {
   return { type: SET_LIDERBOARD, list };
 };
 

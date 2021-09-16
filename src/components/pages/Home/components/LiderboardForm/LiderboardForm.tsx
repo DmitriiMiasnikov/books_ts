@@ -3,6 +3,7 @@ import { Formik, Form as FormikForm } from 'formik';
 import {
   FormWrapper,
   Row,
+  Number,
   Name,
   Rating,
 } from './styled';
@@ -23,6 +24,7 @@ const LiderboardForm = ({ form, liderboard }: Props): JSX.Element => {
             {liderboard.map(({ name, rating }, i) => {
               return (
                 <Row key={i}>
+                  <Number>{i}</Number>
                   <Name>{name}</Name>
                   <Rating>{rating}</Rating>
                 </Row>

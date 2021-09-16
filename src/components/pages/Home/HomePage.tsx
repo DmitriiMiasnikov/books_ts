@@ -8,10 +8,8 @@ import { setLiderboardList } from "../../../store/liderboardReducer";
 import DefaultTemplate from "../../../components/shared/templates/DefaultTemplate";
 import LiderboardForm from "./components/LiderboardForm";
 
-import {} from "./styled";
-
 interface Props {
-  setLiderboardList: (list: [{ name: string; rating: number }]) => void,
+  setLiderboardList: (list: { name: string; rating: number }[]) => void,
   liderboard: { name: string, rating: number }[]
 }
 
@@ -24,8 +22,8 @@ const HomePage = ({ setLiderboardList, liderboard }: Props): JSX.Element => {
   const validationSchema = Yup.object().shape({})
 
   useEffect(() => {
-    setLiderboardList([{ name: "asd", rating: 12 }]);
-  }, []);
+    setLiderboardList([{ name: "asd", rating: 12 }, { name: "sdfgas", rating: 223 }]);
+  }, [setLiderboardList]);
 
   const form = {
     onSubmit,
